@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/blurry" />
+            <option value="$PROJECT_DIR$/evernote-sdk" />
+            <option value="$PROJECT_DIR$/intro-library" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/md-preference" />
+            <option value="$PROJECT_DIR$/orm-library" />
+            <option value="$PROJECT_DIR$/permission-library" />
+            <option value="$PROJECT_DIR$/photopicker" />
+            <option value="$PROJECT_DIR$/qupai" />
+            <option value="$PROJECT_DIR$/shortcut_lib" />
+            <option value="$PROJECT_DIR$/sublimepickerlibrary" />
+            <option value="$PROJECT_DIR$/weekviewlibrary" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/blurry" />
+            <option value="$PROJECT_DIR$/evernote-sdk" />
+            <option value="$PROJECT_DIR$/intro-library" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/md-preference" />
+            <option value="$PROJECT_DIR$/orm-library" />
+            <option value="$PROJECT_DIR$/permission-library" />
+            <option value="$PROJECT_DIR$/photopicker" />
+            <option value="$PROJECT_DIR$/qupai" />
+            <option value="$PROJECT_DIR$/shortcut_lib" />
+            <option value="$PROJECT_DIR$/sublimepickerlibrary" />
+            <option value="$PROJECT_DIR$/weekviewlibrary" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

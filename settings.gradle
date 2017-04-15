@@ -1,0 +1,1 @@
+include ':app', ':library', ':orm-library', ':md-preference', ':evernote-sdk', ':sublimepickerlibrary', ':shortcut_lib', ':weekviewlibrary', ':blurry', ':qupai', ':photopicker', ':intro-library',':permission-library'

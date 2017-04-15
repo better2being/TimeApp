@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <!--2 android:textAppearance: 系统文字外观，’?’代表试探系统是否有此外观，没有则使用默认外观-->
+    <!--tools:text: 告诉Android Studio在运行时忽略该属性，只在设计布局时有效-->
+    <!--android:singleLine: 就是单行显示文字-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/listPreferredItemHeight"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:text="Medium Text"
+        android:id="@+id/textView"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

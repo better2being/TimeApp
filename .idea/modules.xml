@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TimeApp.iml" filepath="$PROJECT_DIR$/TimeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blurry/blurry.iml" filepath="$PROJECT_DIR$/blurry/blurry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/evernote-sdk/evernote-sdk.iml" filepath="$PROJECT_DIR$/evernote-sdk/evernote-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intro-library/intro-library.iml" filepath="$PROJECT_DIR$/intro-library/intro-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/md-preference/md-preference.iml" filepath="$PROJECT_DIR$/md-preference/md-preference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orm-library/orm-library.iml" filepath="$PROJECT_DIR$/orm-library/orm-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/permission-library/permission-library.iml" filepath="$PROJECT_DIR$/permission-library/permission-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photopicker/photopicker.iml" filepath="$PROJECT_DIR$/photopicker/photopicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qupai/qupai.iml" filepath="$PROJECT_DIR$/qupai/qupai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shortcut_lib/shortcut_lib.iml" filepath="$PROJECT_DIR$/shortcut_lib/shortcut_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sublimepickerlibrary/sublimepickerlibrary.iml" filepath="$PROJECT_DIR$/sublimepickerlibrary/sublimepickerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weekviewlibrary/weekviewlibrary.iml" filepath="$PROJECT_DIR$/weekviewlibrary/weekviewlibrary.iml" />
+    </modules>
+  </component>
+</project>

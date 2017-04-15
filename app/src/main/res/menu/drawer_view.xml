@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_weekschedule"
+            android:icon="@drawable/ic_weekschedule"
+            android:title="日程表" />
+        <item
+            android:id="@+id/nav_secondtimer"
+            android:icon="@drawable/ic_secondtimer"
+            android:title="定时器" />
+        <item
+            android:id="@+id/nav_notelist"
+            android:icon="@drawable/ic_notelist"
+            android:title="个人笔记" />
+        <item
+            android:id="@+id/nav_notetrash"
+            android:icon="@drawable/ic_notetrash"
+            android:title="私密空间" />
+        <item
+            android:id="@+id/nav_clock"
+            android:icon="@drawable/ic_clock"
+            android:title="闹钟" />
+        <item
+            android:id="@+id/nav_moresettings"
+            android:icon="@drawable/ic_moresettings"
+            android:title="系统设置" />
+    </group>
+
+
+
+</menu>

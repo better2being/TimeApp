@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/detail_delete"
+        android:title="@string/detail_delete"
+        android:icon="@drawable/glyphicons_016_bin"
+        appcompat:showAsAction="always"/>
+
+</menu>

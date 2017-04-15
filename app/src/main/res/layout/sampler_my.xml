@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sampler_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <ScrollView
+        android:id="@+id/svMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tool="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<include layout="@layout/toolbar_layout" />-->
+
+            <!--焦点拦截 android:focusable="true" android:focusableInTouchMode="true" -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--android:fadingEdge="none" : 用于配置边界效果-->
+                <!--android:cacheColorHint 和 android:scrollingCache : 用于消除缓存机制，使得这种情况下更加流畅-->
+                <!--android:overScrollMode : 越界模式-->
+                <!--android:lineSpacingExtra : 行距属性，单位dp-->
+                <ScrollView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:scrollingCache="false"
+                    android:overScrollMode="never">
+                    <LinearLayout
+                        android:layout_margin="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            style="@style/EditTextTheme"
+                            android:id="@+id/label_edit_text"
+                            android:textSize="@dimen/abc_text_size_large_material"
+                            app:met_primaryColor="?attr/colorPrimary"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelText="@string/title"
+                            app:met_floatingLabelAlwaysShown="true"
+                            app:met_floatingLabelTextColor="?attr/colorPrimary"/>
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            style="@style/EditTextTheme"
+                            android:id="@+id/content_edit_text"
+                            android:lineSpacingExtra="4dp"
+                            app:met_hideUnderline="true"
+                            app:met_primaryColor="?attr/colorPrimary"
+                            app:met_floatingLabel="highlight"
+                            app:met_floatingLabelAlwaysShown="true"
+                            app:met_floatingLabelTextColor="?attr/colorPrimary"
+                            app:met_floatingLabelText="@string/note_content" />
+                        <TextView
+                            android:id="@+id/opr_time_line_text"
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:gravity="end"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:lineSpacingExtra="4dp"
+                            android:layout_gravity="right"
+                            tool:text="015-5-25:14:01" />
+                    </LinearLayout>
+                </ScrollView>
+                <include layout="@layout/toolbar_shadow_layout"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/ivRightLaunchPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="28dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="bottom|right"
+        android:text="E"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:background="@drawable/right_picker" />
+
+    <TextView
+        android:id="@+id/ivLeftLaunchPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="28dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="bottom|left"
+        android:text="S"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:background="@drawable/left_picker"
+        android:contentDescription="launch sublime picker" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</FrameLayout>

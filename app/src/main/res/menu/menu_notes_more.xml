@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit"
+        android:title="编辑"
+        android:icon="@drawable/note_edit"/>
+
+    <item
+        android:id="@+id/add_alarm"
+        android:title="添加闹钟"
+        android:icon="@drawable/note_alarm"/>
+    <item
+        android:id="@+id/move_to_trash"
+        android:title="私密便签"
+        android:icon="@drawable/note_secret"/>
+    <item
+        android:id="@+id/note_delete"
+        android:title="删除"
+        android:icon="@drawable/note_delete"/>
+    <!--ZLF-->
+</menu>

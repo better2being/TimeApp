@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/secondtimertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp">
+
+        <com.tsunami.timeapp.Activity3.clock.WhewView
+            android:id="@+id/wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.tsunami.timeapp.Activity3.clock.RoundImageView
+            android:id="@+id/my_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/start_timers"
+            imagecontrol:border_inside_color="#FF512DA8"
+            imagecontrol:border_outside_color="#FF512DA8"
+            imagecontrol:border_thickness="1dp"
+            />
+
+        <ImageView
+            android:id="@+id/ivSecondTimerLaunchPicker"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="28dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/launch_picker"
+            android:background="@drawable/floating_button_shape"
+            android:contentDescription="launch sublime picker"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

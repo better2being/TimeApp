@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/height_top_bar"
+         android:layout_gravity="center"
+         android:background="#673AB7">
+
+         <ImageView
+             android:id="@+id/publish_back"
+             android:layout_width="32dp"
+             android:layout_height="32dp"
+             android:layout_centerVertical="true"
+             android:paddingStart="10dp"
+             android:paddingLeft="10dp"
+             android:background="@drawable/top_bar_back"
+             android:scaleType="centerCrop"
+             android:onClick="onIsBack"/>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:text="新动态"
+             android:textColor="#ffffff"
+             android:id="@+id/textView"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true" />
+
+         <ImageView
+             android:id="@+id/publish_send"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentEnd="true"
+             android:paddingEnd="20dp"
+             android:paddingRight="20dp"
+             android:background="@drawable/top_bar_send"
+             android:onClick="onSend"/>
+     </RelativeLayout>
+
+    <EditText
+        android:id="@+id/publish_et"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:textCursorDrawable="@null"
+        android:hint="分享你的时间动态"
+        android:paddingLeft="12dp"
+        android:paddingStart="12dp" />
+
+    <GridView
+        android:id="@+id/publish_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:horizontalSpacing="@dimen/space_size"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/space_size" />
+</LinearLayout>

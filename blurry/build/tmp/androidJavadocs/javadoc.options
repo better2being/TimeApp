@@ -1,0 +1,10 @@
+-classpath 'E:\\android_studio_sdk\\platforms\\android-23\\android.jar'
+-d 'E:\\timerSchedul\\9_11\\TimeApp\\blurry\\build\\docs\\javadoc'
+-doctitle 'blurry API'
+-quiet 
+-windowtitle 'blurry API'
+'E:\\timerSchedul\\9_11\\TimeApp\\blurry\\src\\main\\java\\jp\\wasabeef\\blurry\\Blurry.java'
+'E:\\timerSchedul\\9_11\\TimeApp\\blurry\\src\\main\\java\\jp\\wasabeef\\blurry\\internal\\Blur.java'
+'E:\\timerSchedul\\9_11\\TimeApp\\blurry\\src\\main\\java\\jp\\wasabeef\\blurry\\internal\\BlurFactor.java'
+'E:\\timerSchedul\\9_11\\TimeApp\\blurry\\src\\main\\java\\jp\\wasabeef\\blurry\\internal\\BlurTask.java'
+'E:\\timerSchedul\\9_11\\TimeApp\\blurry\\src\\main\\java\\jp\\wasabeef\\blurry\\internal\\Helper.java'

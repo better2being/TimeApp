@@ -1,0 +1,401 @@
+<resources>
+    <string name="app_name">TimeApp</string>
+
+    <string name="id_empty">手机号不能为空</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="password_wrong">输入的密码有误</string>
+    <string name="id_wrong">账号不存在</string>
+    <string name="tel_wrong">输入的手机号有误</string>
+    <string name="exit">再按一次退出程序</string>
+    <string name="login_success">登录成功！</string>
+
+  <string name="temp_degree">℃</string>
+  <string name="weather_detail">天气详情 ></string>
+
+  <string name="today_weather">今日详情</string>
+  <string name="today_sun">日出日落</string>
+
+  <string name="life_about">生活指数</string>
+  <string name="life_cmf">舒适度指数</string>
+  <string name="life_cw">洗车指数</string>
+  <string name="life_drsg">穿衣指数</string>
+  <string name="life_flu">感冒指数</string>
+  <string name="life_sport">运动指数</string>
+  <string name="life_trav">旅游指数</string>
+  <string name="life_uv">紫外线指数</string>
+
+  <string name="week_about">未来一周天气</string>
+  <string name="weather_api">以上数据来源于和风天气</string>
+
+
+  <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+    <string name="checkin">Checkin</string>
+
+    <string name="menu_night_mode">Night mode</string>
+    <string name="menu_night_mode_system">Follow system</string>
+    <string name="menu_night_mode_day">Day (always)</string>
+    <string name="menu_night_mode_night">Night (always)</string>
+    <string name="menu_night_mode_auto">Auto</string>
+
+    <!-- Application -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+
+    <!-- Math Alarm Activity -->
+
+    <string name="title_activity_set_alarms">Set Alarm</string>
+    <string name="no_alarms">没有闹钟被设置</string>
+
+    <string name="button_new">New</string>
+
+    <!-- Menu -->
+    <string name="menu_item_new">New</string>
+    <string name="menu_item_save">Save</string>
+    <string name="menu_item_delete">Cancel</string>
+    <string name="menu_item_rate">Rate on Google Play</string>
+    <string name="menu_item_website">Website</string>
+    <string name="menu_item_report">Report a Bug</string>
+
+    <!-- Alert -->
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="decimal_button_text">,</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="minus_button_text">-</string>
+
+
+    <color name="title_background_color">#000000</color>
+
+    <string name="button_delete">Delete</string>
+    <string name="ok">OK</string>
+
+
+
+
+    <string name="time_next">Next</string>
+    <string name="time_prev">Previous</string>
+
+  <string name="calendar_item_new_count">%d条</string>
+  <string name="action_settings">settings</string>
+
+
+
+
+  <string name="app_picker_name">应用</string>
+  <string name="bookmark_picker_name">书签</string>
+  <string name="button_add_calendar">添加事件至日历</string>
+  <string name="button_add_contact">添加联系人</string>
+  <string name="button_back">返回</string>
+  <string name="button_book_search">打开图书搜索</string>
+  <string name="button_cancel">取消</string>
+  <string name="button_custom_product_search">自定义搜索</string>
+  <string name="button_dial">拨号</string>
+  <string name="button_done">完成</string>
+  <string name="button_email">发送email</string>
+  <string name="button_get_directions">获取地址</string>
+  <string name="button_google_shopper">谷歌购物</string>
+  <string name="button_mms">发送彩信</string>
+  <string name="button_ok">确定</string>
+  <string name="button_open_browser">打开浏览器</string>
+  <string name="button_product_search">打开产品搜索</string>
+  <string name="button_search_book_contents">搜索图书内容</string>
+  <string name="button_share_app">共享应用</string>
+  <string name="button_share_bookmark">分享书签</string>
+  <string name="button_share_by_email">通过email分享</string>
+  <string name="button_share_by_sms">通过短信分享</string>
+  <string name="button_share_clipboard">分享剪切板</string>
+  <string name="button_share_contact">分享联系人</string>
+  <string name="button_show_map">显示地图</string>
+  <string name="button_sms">发送短信</string>
+  <string name="button_web_search">网页搜索</string>
+  <string name="button_wifi">连接到网络</string>
+  <string name="contents_contact">联系人信息</string>
+  <string name="contents_email">Email地址</string>
+  <string name="contents_location">地理坐标</string>
+  <string name="contents_phone">电话号码</string>
+  <string name="contents_sms">短信地址</string>
+  <string name="contents_text">纯文本</string>
+  <string name="history_clear_one_history_text">删除</string>
+  <string name="history_clear_text">删除历史</string>
+  <string name="history_email_title">条码扫描器历史</string>
+  <string name="history_empty">空的</string>
+  <string name="history_empty_detail">没有条码扫描已记录</string>
+  <string name="history_send">发送历史</string>
+  <string name="history_title">历史</string>
+  <string name="menu_encode_mecard">使用MECARD</string>
+  <string name="menu_encode_vcard">使用vCard</string>
+  <string name="menu_help">帮助</string>
+  <string name="menu_history">历史</string>
+  <string name="menu_settings">设置</string>
+  <string name="menu_share">分享</string>
+  <string name="msg_bulk_mode_scanned">批量扫描：找到条码，已保存</string>
+  <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+  <string name="msg_default_format">格式</string>
+  <string name="msg_default_meta">元数据</string>
+  <string name="msg_default_mms_subject">Hi</string>
+  <string name="msg_default_status">请将条码置于取景框内扫描。  </string>
+  <string name="msg_default_time">时间</string>
+  <string name="msg_default_type">类型</string>
+  <string name="msg_encode_contents_failed">无法根据已有数据生成条码。   </string>
+  <string name="msg_google_books">谷歌图书</string>
+  <string name="msg_google_product">谷歌购物</string>
+  <string name="msg_google_shopper_missing">谷歌购物未安装</string>
+  <string name="msg_install_google_shopper">谷歌购物是一款将条码扫描和商品比价相结合的应用，谷歌购物不使用浏览器，您想尝试吗？</string>
+  <string name="msg_intent_failed">抱歉，无法打开所需软件。 条码内容可能无效。</string>
+  <string name="msg_redirect">重定向</string>
+  <string name="msg_sbc_book_not_searchable">抱歉，无法找到此图书。</string>
+  <string name="msg_sbc_failed">抱歉，搜索时遇到错误。</string>
+  <string name="msg_sbc_no_page_returned">无页面返回</string>
+  <string name="msg_sbc_page">页面</string>
+  <string name="msg_sbc_results">结果</string>
+  <string name="msg_sbc_searching_book">搜索图书…</string>
+  <string name="msg_sbc_snippet_unavailable">摘录不可用</string>
+  <string name="msg_sbc_unknown_page">未知页面</string>
+  <string name="msg_share_explanation">您可以通过在自己的手机上显示条码，并使用其它手机扫描此条码的方式进行分享</string>
+  <string name="msg_share_subject_line">这是我所扫描条码的内容</string>
+  <string name="msg_share_text">或键入一些文字</string>
+  <string name="msg_sure">你肯定吗？</string>
+  <string name="msg_unmount_usb">抱歉，SD卡不可访问。</string>
+  <string name="preferences_actions_title">找到条码时</string>
+  <string name="preferences_auto_focus_title">使用自动对焦</string>
+  <string name="preferences_bulk_mode_summary">连续扫描并保存多个条形码</string>
+  <string name="preferences_bulk_mode_title">批量扫描模式</string>
+  <string name="preferences_copy_to_clipboard_title">复制到剪切板</string>
+  <string name="preferences_custom_product_search_summary" formatted="false">替换：％s=内容，％f=格式，％t=类型</string>
+  <string name="preferences_custom_product_search_title">自定义搜索网址</string>
+  <string name="preferences_decode_1D_title">扫描 一维条码</string>
+  <string name="preferences_decode_Data_Matrix_title">扫描 DM码</string>
+  <string name="preferences_decode_QR_title">扫描 QR码</string>
+  <string name="preferences_device_bug_workarounds_title">设备问题解决办法</string>
+  <string name="preferences_disable_continuous_focus_summary">只使用标准对焦模式</string>
+  <string name="preferences_disable_continuous_focus_title">没有持续关注</string>
+  <string name="preferences_disable_exposure_title">无曝光</string>
+  <string name="preferences_front_light_summary">前灯可用时，打开前灯</string>
+  <string name="preferences_front_light_title">前灯</string>
+  <string name="preferences_general_title">一般设置</string>
+  <string name="preferences_name">设置</string>
+  <string name="preferences_play_beep_title">提示音</string>
+  <string name="preferences_remember_duplicates_summary">在历史记录中保存重复记录</string>
+  <string name="preferences_remember_duplicates_title">记住重复</string>
+  <string name="preferences_result_title">结果设置</string>
+  <string name="preferences_scanning_title">条码类型选择</string>
+  <string name="preferences_search_country">搜索国家</string>
+  <string name="preferences_supplemental_summary">尝试检索关于条码内容的更多信息</string>
+  <string name="preferences_supplemental_title">检索更多信息</string>
+  <string name="preferences_try_bsplus">尝试条码扫描器+</string>
+  <string name="preferences_try_bsplus_summary">增强新的功能和接口</string>
+  <string name="preferences_vibrate_title">振动</string>
+  <string name="result_address_book">找到联系人信息</string>
+  <string name="result_calendar">找到日历事件</string>
+  <string name="result_email_address">找到email地址</string>
+  <string name="result_geo">找到地理坐标</string>
+  <string name="result_isbn">找到图书</string>
+  <string name="result_product">找到产品</string>
+  <string name="result_sms">找到短信地址</string>
+  <string name="result_tel">找到电话号码</string>
+  <string name="result_text">找到纯文本</string>
+  <string name="result_uri">找到URL</string>
+  <string name="result_wifi">发现网络配置</string>
+  <string name="sbc_name">Google图书搜索</string>
+  <string name="share_name">通过条码分享</string>
+  <string name="wifi_changing_network">请求连接到网络\u2026</string>
+  <string name="wifi_ssid_label">网络SSID</string>
+  <string name="wifi_type_label">类型</string>
+
+
+  <string name="app_desc">Succinct Notes, Simple Notepad Application</string>
+  <string name="setting">Setting</string>
+  <string name="bind_ever_note">Bind EverNote</string>
+  <string name="unbind_ever_note">Unbind EverNote</string>
+  <string name="about">About</string>
+
+  <string name="search">Search</string>
+  <string name="more">More</string>
+  <string name="general_settings">General Settings</string>
+  <string name="other">Other</string>
+  <string name="advice_feedback">Advice Feedback</string>
+  <string name="give_favor">Give favor</string>
+  <string name="sync">Sync</string>
+  <array name="drawer_content">
+    <item>SNotes</item>
+    <item>Trash</item>
+  </array>
+  <string name="note_log_text" formatted="false">%s\u0020:\u0020%s</string>
+  <string name="edit">Edit</string>
+  <string name="trash">Trash</string>
+  <string name="delete">Delete</string>
+  <string name="right_hand_mode">Right Hand Mode</string>
+  <string name="right_hand_mode_summary">If this is on, the drawer will open on right side</string>
+  <string name="sure">OK</string>
+  <string name="cancel">Cancel</string>
+  <string name="delete_tip">Are you want to delete this note from local</string>
+  <string name="done">Done</string>
+  <string name="label">Label</string>
+  <string name="note_content">content</string>
+  <string name="new_note">New Note</string>
+  <string name="search_note">Search</string>
+  <string name="edit_note">Edit Note</string>
+  <string name="view_note">View Note</string>
+  <string name="show_note_history_log_key">show_note_history_log_key</string>
+  <string name="right_hand_mode_key">right_hand_mode_key</string>
+  <string name="move_success">Remove Success</string>
+  <string name="recover">Recover</string>
+  <string name="create">Create</string>
+  <string name="advice_feedback_key">advice_feedback_key</string>
+  <string name="no_email_app_tip">Please install email app first or send email to 2010330579@qq.com directly</string>
+  <string name="sync_account_key">sync_account_key</string>
+  <string name="sync_success">Sync success</string>
+  <string name="sync_fail">Sync fail</string>
+  <string name="pay_for_me_title">Pay For Me</string>
+  <string name="jianshu_blog">Jianshu Blog</string>
+  <string name="project_home">Project Home</string>
+  <string name="pay_for_me_tip">If you think the SuccinctNotes useful to you, please feel free to reward.</string>
+  <string name="pay_for_me">Pay</string>
+  <string name="pay_for_me_key">pay_for_me_key</string>
+  <string name="recycle_bin">Trash</string>
+  <string name="give_favor_key">give_favor_key</string>
+  <string name="card_note_item_layout">Card View Notes</string>
+  <string name="card_note_item_layout_key">card_note_item_layout_key</string>
+  <string name="not_save_note_leave_tip">Note have changed, are you want to leave this page without saving the notes</string>
+  <string name="change_theme">Change Theme</string>
+  <string name="change_theme_key">change_theme_key</string>
+  <string name="before_hour" formatted="false">%d\u0020 hours ago</string>
+  <string name="before_day" formatted="false">%d\u0020 days ago</string>
+  <string name="before_month" formatted="false">%d\u0020 months ago</string>
+  <string name="before_year" formatted="false">%d\u0020 years ago</string>
+  <string name="share_text" formatted="false">Succinct notes, simple and easy to use, recommend you to use %s\u0020%s</string>
+  <string name="download_url" >Download url</string>
+  <string name="share">Share</string>
+  <string name="not_install_app">Install corresponding app first</string>
+  <array name="share_dialog_text">
+    <item>Wechat Friends</item>
+    <item>Wechat Moments</item>
+    <item>Wechat Favorite</item>
+    <item>Sina Weibo</item>
+    <item>More</item>
+  </array>
+  <string name="about_bottom_text">Copyright © 2015 Tsunami.\nAll Rights Reserved.</string>
+  <string name="bind_ever_note_fail">Bind EverNote fail</string>
+  <string name="bind_ever_note_success">Bind EverNote success</string>
+  <string name="ever_note_account">EverNote Account</string>
+  <string name="ever_note_account_key">ever_note_account_key</string>
+  <string name="has_unbind_ever_note_tip">Are you sure to unbind EverNote</string>
+  <string name="expunge_error">Expunge Delete Error</string>
+  <string name="unbind_ever_note_tip">Go to settings and bind EverNote</string>
+  <string name="go_bind">Bind</string>
+  <string name="delete_error">Delete error</string>
+  <string name="recovering">Recovering</string>
+  <string name="frequent_api_tip">Try again later</string>
+  <string name="view">View</string>
+  <string name="last_update">Last update</string>
+  <string name="error_auth_expired_tip">Auth error，please auth again</string>
+  <string name="error_permission_deny">Permission Deny</string>
+  <string name="error_quota_reached">Quota reached error</string>
+  <string name="title">title</string>
+  <string name="backup_local_key">backup_local_key</string>
+  <string name="backup_local_summary">Backup notes to SDCard /TimeApp/notes.txt</string>
+  <string name="backup_local">Backup Local</string>
+  <string name="backup_local_done">Backup done</string>
+  <string name="backup_local_fail">Backup fail</string>
+  <string name="just_now">just now</string>
+  <string name="before_half_hour">a half of hour ago</string>
+  <string name="default_label">No Title</string>
+
+  <!-- Gesture code starting -->
+  <string name="setup_gesture_code">设置手势密码</string>
+  <string name="setup_gesture_pattern">绘制解锁图案</string>
+  <string name="setup_gesture_pattern_again">再次绘制解锁图案</string>
+  <string name="forget_gesture_code">忘记手势密码?</string>
+  <string name="use_other_account_login">用其他账号登录</string>
+  <string name="set_gesture_pattern">绘制解锁图案</string>
+  <string name="set_gesture_pattern_reason">设置手势密码，防止他人未经授权查看</string>
+  <string name="reset_gesture_code">重新设置手势密码</string>
+  <!-- End -->
+
+  <string name="setScheduleStartAndEndTime">添加到日程表</string>
+  <string name="weatherWarning">天气提醒</string>
+  <string name="sendToDesk">发送到桌面</string>
+  <string name="note_clock">闹钟提醒</string>
+
+
+  <string name="action_today">Today</string>
+  <string name="action_addSchedule">Add</string>
+  <string name="action_day_view">Day view</string>
+  <string name="action_three_day_view">3 day view</string>
+  <string name="action_week_view">Week view</string>
+  <string name="title_activity_basic">日程管理</string>
+  <string name="title_activity_asynchronous">Asynchronous Events</string>
+  <string name="async_error">Could not download events from the internet</string>
+
+
+  <string name="search_friend">搜索好友</string>
+  <string name="detail_delete">删除好友</string>
+
+  <string name="title_menu_github">View on GitHub</string>
+  <string name="title_menu_reset_first_start">Reset "First start" flag</string>
+
+  <string name="label_options">Options:</string>
+  <string name="label_option_fullscreen">Enable fullscreen</string>
+  <string name="label_option_scrollable">Scrollable slides</string>
+  <string name="label_option_custom_fragments">Enable custom fragments</string>
+  <string name="label_option_permissions">Enable permission request</string>
+  <string name="label_option_show_back">Show back button</string>
+  <string name="label_option_show_next">Show next button</string>
+  <string name="label_option_skip_enabled">Enable skip button</string>
+  <string name="label_option_finish_enabled">Enable finish button</string>
+  <string name="label_option_get_started_enabled">Enable \"Get Started\" button</string>
+  <string name="label_start_intro">Start intro</string>
+  <string name="label_or">or</string>
+  <string name="label_demos">Demos: </string>
+  <string name="label_start_canteen">\"Canteen\" intro</string>
+  <string name="label_start_splash">Splash screen</string>
+
+  <string name="title_material_metaphor">Material is the metaphor</string>
+  <string name="title_material_bold">Bold, graphic, intentional</string>
+  <string name="title_material_motion">Motion provides meaning</string>
+  <string name="title_material_shadow">Light and shadow</string>
+
+  <string name="description_material_metaphor">A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.</string>
+  <string name="description_material_bold">The foundational elements of print-based design – typography, grids, space, scale, color, and use of imagery – guide visual treatments.</string>
+  <string name="description_material_motion">Motion respects and reinforces the user as the prime mover. Primary user actions are inflection points that initiate motion, transforming the whole design.</string>
+  <string name="description_material_shadow">Within the material environment, virtual lights illuminate the scene. Key lights create directional shadows, while ambient light creates soft shadows from all angles.</string>
+
+  <string name="title_permissions">Requesting permissions was never easier.</string>
+  <string name="description_permissions">This app needs the camera and storage permission.\nIt\'s only to show how permission requests work in this library and we won\'t do anything with the granted permissions.</string>
+  <string name="label_grant_permissions">Please grant the permissions before proceeding.</string>
+
+  <string name="label_button_cta">Click me!</string>
+  <string name="toast_button_cta">Hey, that\'s how custom CTA buttons work in material-intro!</string>
+
+  <string name="title_fragment_login">This is a custom fragment.</string>
+  <string name="hint_fake_username">Fake username</string>
+  <string name="hint_fake_password">Fake password</string>
+  <string name="label_fake_login">Fake login</string>
+  <string name="label_fake_login_loading">Loading…</string>
+  <string name="label_fake_login_success">Logged in ☺</string>
+  <string name="label_fake_login_success_message">Successfully faked login.</string>
+  <string name="label_fill_out_form">Please fill out the form before proceeding.</string>
+
+  <string name="title_fragment_custom">Take off!</string>
+
+  <string name="label_activity_finish">Nothing here…\n…just a demo how to create a splash screen intro.</string>
+
+  <string name="title_canteen_intro1" translatable="false">Menus right on your screen</string>
+  <string name="title_canteen_intro2" translatable="false">Cash on delivery</string>
+  <string name="title_canteen_intro3" translatable="false">Choose what you like</string>
+  <string name="description_canteen_intro1" translatable="false">Looking for something to eat? Just browse the feed wherever you are.</string>
+  <string name="description_canteen_intro2" translatable="false">Order and we\'ll deliver the menu right in front of your door.</string>
+  <string name="description_canteen_intro3" translatable="false">Bookmark a menu you wanted to save and keep track of its status whether it\'s available or not.</string>
+  <string name="label_button_cta_canteen_intro" translatable="false">Get started</string>
+</resources>

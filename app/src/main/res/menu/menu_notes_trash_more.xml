@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--ZLF 这是回收站的页面-->
+    <item
+        android:id="@+id/edit"
+        android:title="编辑"
+        android:icon="@drawable/note_edit"/>
+
+    <item
+        android:id="@+id/add_alarm"
+        android:title="添加闹钟"
+        android:icon="@drawable/note_alarm"/>
+    <item
+        android:id="@+id/recover"
+        android:title="普通清单"
+        android:icon="@drawable/note_secret"/>
+    <item
+        android:id="@+id/note_delete"
+        android:title="删除"
+        android:icon="@drawable/note_delete"/>
+</menu>

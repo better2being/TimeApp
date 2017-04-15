@@ -1,0 +1,202 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+// 2 添加的代码
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+def packTime() {
+    return new Date().format("yyyyMMddHHmm", TimeZone.getTimeZone("UTC"))
+}
+def projectUrl = "https://w.seu.edu.cn/index.php?url=aHR0cDovL2hhby4zNjAuY24v"
+def blogUrl = "https://w.seu.edu.cn/index.php?url=aHR0cDovL2hhby4zNjAuY24v"
+def appDownloadUrl = "http://notes.55058a091d225.d01.nanoyun.com/release/notes.apk"
+def aboutAppUrl = "https://w.seu.edu.cn/index.php?url=aHR0cDovL2hhby4zNjAuY24v"
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def weChatId = properties.getProperty('WECHAT_ID')
+def everNoteKey = properties.getProperty('EVER_NOTE_KEY')
+def everNoteSecret = properties.getProperty('EVER_NOTE_SECRET')
+////////////////////////////
+android {
+
+    // 2 添加的代码
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+    compileSdkVersion Integer.parseInt(ANDROID_BUILD_COMPILE_SDK_VERSION)
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+    defaultConfig {
+        applicationId "com.tsunami.timeapp"
+        minSdkVersion Integer.parseInt(MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(ANDROID_BUILD_TARGET_SDK_VERSION)
+        multiDexEnabled true
+        versionCode Integer.parseInt(VERSION_CODE)
+        versionName VERSION_NAME
+
+        buildConfigField "String", "WECHAT_ID", "\"${weChatId}\""
+        buildConfigField "String", "EVER_NOTE_KEY", "\"${everNoteKey}\""
+        buildConfigField "String", "EVER_NOTE_SECRET", "\"${everNoteSecret}\""
+        buildConfigField "String", "APP_DOWNLOAD_URL", "\"${appDownloadUrl}\""
+        buildConfigField "String", "PROJECT_URL", "\"${projectUrl}\""
+        buildConfigField "String", "BLOG_URL", "\"${blogUrl}\""
+        buildConfigField "String", "ABOUT_APP_URL", "\"${aboutAppUrl}\""
+        ///////////////////////////////////
+    }
+    dexOptions {
+        javaMaxHeapSize "4g" //specify the heap size for the dex process
+    }
+    signingConfigs {
+        release {
+            storeFile file("../yiwcircle.jks")
+            keyAlias "yiwcircle"
+            storePassword "123456"
+            keyPassword "123456"
+        }
+    }
+    buildTypes {
+        // 2 添加的代码
+        debug {
+            versionNameSuffix " Beta"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                File outputDirectory = new File(outputFile.parent);
+                def fileName
+                if (variant.buildType.name == "release") {
+                    fileName = "notes_v${defaultConfig.versionName}_${packTime()}.apk"
+                } else {
+                    fileName = "notes_beta.apk"
+                }
+                output.outputFile = new File(outputDirectory, fileName)
+            }
+        }
+
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+// 2 添加的代码
+    File propFile = file('signing.properties');
+    if (propFile.exists()) {
+        def Properties props = new Properties()
+        props.load(new FileInputStream(propFile))
+        if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+            android.signingConfigs.release.storeFile = file(props['STORE_FILE'])
+            android.signingConfigs.release.storePassword = props['STORE_PASSWORD']
+            android.signingConfigs.release.keyAlias = props['KEY_ALIAS']
+            android.signingConfigs.release.keyPassword = props['KEY_PASSWORD']
+        } else {
+            android.buildTypes.release.signingConfig = null
+        }
+    } else {
+        android.buildTypes.release.signingConfig = null
+    }
+
+    retrolambda {
+        //javaVersion JavaVersion.VERSION_1_6
+    }
+
+///////////////////////////////////
+    dependencies {
+        compile 'org.xutils:xutils:3.3.34'
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:appcompat-v7:23.2.0'
+        compile 'com.github.bumptech.glide:glide:3.6.0'
+        compile 'de.hdodenhof:circleimageview:1.3.0'
+        compile 'com.android.support:design:23.2.0'
+        compile files('libs/common-lang3.jar')
+        compile files('libs/joda-time-2.1.jar')
+        compile files('libs/xUtils-2.6.14.jar')
+        compile project(':library')
+        compile 'io.reactivex:rxandroid:1.1.0'
+        compile 'com.trello:rxlifecycle:0.5.0'
+        // If you want pre-written Activities and Fragments you can subclass as providers
+        compile 'com.trello:rxlifecycle-components:0.5.0'
+        compile 'com.squareup.retrofit2:retrofit:2.0.1'
+        compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+        compile 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
+        compile 'com.squareup.picasso:picasso:2.5.2'
+        compile files('libs/core.jar')
+        compile files('libs/ApiStoreSDK1.0.4.jar')
+        compile files('libs/libammsdk.jar')
+
+        // 2 添加的代码
+
+        apt 'com.google.dagger:dagger-compiler:2.0.2'
+        compile 'com.android.support:support-v4:23.1.1'
+        compile 'com.android.support:appcompat-v7:23.1.1'
+        compile 'com.android.support:recyclerview-v7:23.1.1'
+        compile 'com.android.support:cardview-v7:23.1.1'
+        compile 'com.android.support:design:23.1.1'
+        compile 'com.jakewharton:butterknife:7.0.1'
+        compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+        compile 'com.rengwuxian.materialedittext:library:2.1.3'
+//    compile 'com.google.dagger:dagger:2.0.2'
+        compile 'io.reactivex:rxandroid:1.0.1'
+        compile 'io.reactivex:rxjava:1.0.14'
+        compile 'de.greenrobot:eventbus:2.4.0'
+        compile project(':orm-library')
+
+        compile project(':evernote-sdk')
+        compile project(':md-preference')
+        compile project(':sublimepickerlibrary')
+        compile project(':shortcut_lib')
+        compile project(':blurry')
+
+        compile project(':weekviewlibrary')
+        compile 'com.squareup.retrofit:retrofit:1.9.0'
+
+        compile 'com.malinskiy:superrecyclerview:1.1.3'
+        compile 'com.mikhaellopez:circularprogressbar:1.1.1'
+        compile 'com.github.bumptech.glide:glide:3.7.0'
+        compile 'com.squareup.okhttp3:okhttp:3.2.0'
+        compile('com.github.bumptech.glide:okhttp3-integration:1.4.0') {
+            exclude group: 'glide-parent'
+        }
+        compile project(':qupai')
+        compile project(':photopicker')
+        compile 'io.reactivex:rxjava:1.1.0'
+        compile project(':intro-library')
+        compile project(':permission-library')
+    }
+}
+dependencies {
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+}

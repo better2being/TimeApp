@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--搜索项-->
+    <item
+        android:id="@+id/action_friend_search"
+        android:title="@string/search"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView">
+    </item>
+
+    <item
+        android:id="@+id/action_night"
+        android:title="手势密码"
+        app:showAsAction="never">
+    </item>
+
+</menu>

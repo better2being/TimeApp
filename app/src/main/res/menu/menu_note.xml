@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/ic_done_white"
+        android:title="@string/done"
+        app:showAsAction="ifRoom" />
+
+
+
+    <item android:id="@+id/editnote_more"
+        android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:title="@string/more"
+        app:showAsAction="ifRoom">
+        <menu>
+
+
+            <item
+                android:id="@+id/addTimeDataToSchedule"
+                android:title="添加时间到日程表"
+                />
+            <item
+                android:id="@+id/upload_schedule"
+                android:title="上传"
+                />
+            <item
+                android:id="@+id/weatherWarning"
+                android:title="@string/weatherWarning" />
+            <item
+                android:id="@+id/note_clock"
+                android:title="@string/note_clock" />
+            <!--<item-->
+                <!--android:id="@+id/sendToDesk"-->
+                <!--android:title="@string/sendToDesk" />-->
+
+        </menu>
+    </item>
+</menu>
